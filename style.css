@@ -1,0 +1,72 @@
+body {
+    background-color: ghostwhite;
+}
+header {
+    padding: 0;
+    margin:0;
+    border-bottom:1px solid #ddd;
+}
+
+header .logo h3{
+    text-align:center;
+}
+.menu ul {
+    padding:0;
+    text-align: center;
+}
+.menu ul li {
+    list-style-type: none;
+    display:inline;
+    padding:0 10px;
+}
+
+.grid {
+    margin-top:20px;
+}
+
+.grid .box {
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #ddd;
+    padding:15px;
+    margin:10px 0;
+    background-color: #fff;
+}
+
+/* Media Queries */
+
+/* For Tablet >= 768px */
+@media only screen and (min-width: 768px) {
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .logo h3{
+        text-align:left;
+    }
+    .grid {
+        margin-top:50px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .grid .box{
+        width:40%;
+        margin:10px;
+    }
+}
+
+/* For Notebook >= 1024px */
+@media only screen and (min-width: 1024px) {
+    .grid .box{
+        width:28%;
+    }
+}
+
+/* For laptop >= 1200px and more */
+@media only screen and (min-width: 1024px) {
+    .grid .box{
+        width:15%;
+    }
+}
+
+
